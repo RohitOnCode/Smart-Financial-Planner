@@ -1,0 +1,34 @@
+
+{% extends 'base.html' %}{% block title %}Smart Financial Planner{% endblock %}{% block content %}
+<div class="card space-y-6">
+  <div class="flex items-center justify-between">
+    <h2 class="text-xl font-bold">Financial Planner</h2>
+    <span class="text-xs opacity-70">Report opens in a new full‑page tab</span>
+  </div>
+  <form method="POST" action="{{ url_for('run_research') }}" target="_blank" class="space-y-4" onsubmit="this.querySelector('button[type=submit]').disabled=true;">
+    <div>
+      <label class="block text-sm mb-1">Research Query</label>
+      <input name="query" placeholder="e.g., NVIDIA data center outlook 2025"/>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div>
+        <label class="block text-sm mb-1">Ticker (optional)</label>
+        <input name="ticker" placeholder="e.g., NVDA"/>
+      </div>
+      <div>
+        <label class="block text-sm mb-1">Max Sources</label>
+        <input type="number" name="max_sources" value="6"/>
+      </div>
+      <div>
+        <label class="block text-sm mb-1">Mode</label>
+        <select name="mode">
+          <option>Strict</option>
+          <option selected>Normal</option>
+          <option>Relaxed</option>
+        </select>
+      </div>
+    </div>
+    <button type="submit" class="btn">Run Planner</button>
+  </form>
+</div>
+{% endblock %}

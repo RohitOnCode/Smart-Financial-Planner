@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "query": "NVIDIA data center outlook 2025",
+      "ticker": "NVDA"
+    },
+    {
+      "query": "Apple services growth 2025",
+      "ticker": "AAPL"
+    },
+    {
+      "query": "Tesla energy business margins",
+      "ticker": "TSLA"
+    }
+  ]
+}

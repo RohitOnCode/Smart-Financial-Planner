@@ -1,0 +1,13 @@
+
+Extract up to {n} concise, verifiable, atomic factual claims from the SUMMARY.
+- Do NOT invent facts.
+- Each claim must be specific to the TOPIC.
+- If there aren't enough supported facts, return fewer lines.
+
+SUMMARY:
+{summary}
+
+TOPIC:
+{topic}
+
+Return one claim per line, with no numbering.

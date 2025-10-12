@@ -1,0 +1,4 @@
+
+Given KPI values (P/E, P/S, Gross Margin, Operating Margin), produce a short rationale for investability.
+Be conservative and list 2-4 bullet reasons, mentioning thresholds and tradeoffs.
+KPIs: {kpis}
